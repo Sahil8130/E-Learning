@@ -1,0 +1,182 @@
+/* Dashboard.css */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.student-dashboard,
+.instructor-dashboard {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-overview h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.no-progress {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.browse-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.browse-button:hover {
+  background-color: #2980b9;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progress-card {
+  border: 1px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+.progress-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.progress-header h3 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.progress-stats {
+  text-align: right;
+}
+
+.completion {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.percentage {
+  display: block;
+  color: #2ecc71;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2ecc71;
+  transition: width 0.3s;
+}
+
+.progress-actions {
+  text-align: center;
+}
+
+.continue-button {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.continue-button:hover {
+  background-color: #2980b9;
+}
+
+/* Instructor dashboard */
+.instructor-welcome {
+  text-align: center;
+}
+
+.instructor-welcome h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.instructor-welcome p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.instructor-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+  
+  .student-dashboard,
+  .instructor-dashboard {
+    padding: 20px;
+  }
+  
+  .progress-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .progress-stats {
+    text-align: left;
+  }
+  
+  .instructor-actions {
+    flex-direction: column;
+  }
+}

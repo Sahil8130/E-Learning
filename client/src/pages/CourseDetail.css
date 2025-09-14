@@ -1,0 +1,140 @@
+/* CourseDetail.css */
+.course-detail-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.course-header {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.course-header h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.course-instructor {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.course-description {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.instructor-actions {
+  margin-top: 20px;
+}
+
+.lectures-section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lectures-section h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.no-lectures {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.lectures-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lecture-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.lecture-item:hover {
+  background-color: #f8f9fa;
+}
+
+.lecture-info h3 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.lecture-type {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.lecture-type.reading {
+  background-color: #e8f5e8;
+  color: #27ae60;
+}
+
+.lecture-type.quiz {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.lecture-button {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.lecture-button:hover {
+  background-color: #2980b9;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .course-detail-container {
+    padding: 10px;
+  }
+  
+  .course-header,
+  .lectures-section {
+    padding: 20px;
+  }
+  
+  .lecture-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .lecture-actions {
+    width: 100%;
+  }
+  
+  .lecture-button {
+    width: 100%;
+    text-align: center;
+  }
+}

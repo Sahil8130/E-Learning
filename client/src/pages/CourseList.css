@@ -1,0 +1,133 @@
+/* CourseList.css */
+.course-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.course-list-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.course-list-header h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.course-list-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.course-card-header {
+  padding: 20px 20px 10px;
+}
+
+.course-card-header h3 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.course-instructor {
+  color: #666;
+  font-size: 14px;
+}
+
+.course-card-content {
+  padding: 0 20px 10px;
+}
+
+.course-card-content p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.course-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lecture-count {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.course-card-footer {
+  padding: 20px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.course-button {
+  display: block;
+  width: 100%;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.course-button:hover {
+  background-color: #2980b9;
+}
+
+.no-courses {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.browse-button {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.browse-button:hover {
+  background-color: #27ae60;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .course-list-container {
+    padding: 10px;
+  }
+}
