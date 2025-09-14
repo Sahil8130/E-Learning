@@ -141,3 +141,5 @@ npm start
 The application is now fully functional and ready for development. Open http://localhost:3000 in your browser to start using the platform!
 
 **Happy Learning! 🎓✨**
+
+## AUTHOR : SAHIL SAROJ
